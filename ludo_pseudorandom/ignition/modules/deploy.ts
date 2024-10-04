@@ -1,11 +1,11 @@
 import { ethers } from 'hardhat';
 
 async function main() {
-    const simpleLudo = await ethers.deployContract('SimpleLudo');
+    const studentPortal = await ethers.deployContract('studentPortal');
 
-    await simpleLudo.waitForDeployment();
+    await studentPortal.waitForDeployment();
 
-    console.log('SimpleLudo Contract Deployed at ' + simpleLudo.target);
+    console.log('studentPortal Contract Deployed at ' + studentPortal.target);
 }
 
 main().catch((error) => {
